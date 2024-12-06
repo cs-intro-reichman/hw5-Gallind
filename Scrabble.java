@@ -70,7 +70,7 @@ public class Scrabble {
 		if (word.length() == HAND_SIZE){
 			score += 50;
 		}
-		if (MyString.subsetOf(word, "runi")){
+		if (MyString.includeAllLetters(word, "runi")){
 			score += 1000;
 		}
 		return score;

@@ -8,6 +8,9 @@ public class MyString {
         System.out.println(countChar(hello, 'l'));
         System.out.println(countChar(hello, 'z'));
         System.out.println(spacedString(hello));
+        System.out.println(subsetOf("space", "spda"));
+        System.out.println(subsetOf("space", "c"));
+        System.out.println(subsetOf("space", ""));
         //// Put your other tests here.
     }
 
@@ -113,7 +116,7 @@ public class MyString {
      * @return a string consisting of str1 minus all the characters of str2
      */
     public static String remove(String str1, String str2) {
-        String newStr = "";
+        String newStr = str1;
         for (int i = 0; i < str2.length(); i++){
              boolean found = false;
              newStr = "";
