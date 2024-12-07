@@ -43,7 +43,9 @@ public class MyString {
      * @param str2 - a string
      * @return true is str1 is a subset of str2, false otherwise
      */
-    public static boolean subsetOf(String str1, String str2) {
+    public static boolean subsetOf(String str2, String str1) {
+        return includeAllLetters(str1, str2);
+        /*
         if (str2.length() == 0) {
             return true;
         }
@@ -63,6 +65,7 @@ public class MyString {
             }
         }
         return false;
+        */
     
     }
 
@@ -75,14 +78,18 @@ public class MyString {
      * @return a string consisting of the characters of str, separated by spaces.
      */
     public static String spacedString(String str) {
-        String newStr = "";
+        
         if (str.length() == 0){
-            return null;
+            return "";
         }
-        for (int i = 0; i < str.length() - 1; i++){
-            newStr += str.charAt(i) + " ";
+        String newStr = "";
+        newStr += str.charAt(0);
+        for (int i = 1; i < str.length(); i++){
+            //newStr += str.charAt(i) + " ";
+            //newStr.concat(String.valueOf(str.charAt(i)));
+            newStr += " " + str.charAt(i);
         }
-        newStr += str.charAt(str.length() - 1);
+        //newStr += str.charAt(str.length() - 1);
         return newStr;
     }
   
