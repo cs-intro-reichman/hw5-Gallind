@@ -11,8 +11,8 @@ public class ScrabbleTest {
             case "isWordInDictionary": testIsWordInDictionary(); break;
             case "wordScore": testWordScore(); break;
             case "createHand": testCreateHand(); break;
-            //case "playHand": testPlayHand(); break;
-            //case "playHandWithMockInput": testPlayHandWithMockInput(); break;
+            case "playHand": testPlayHand(); break;
+            case "playHandWithMockInput": testPlayHandWithMockInput(); break;
             case "playGameWithMockInput": testPlayGameWithMockInput(); break;
             default: System.out.println("Unknown test: " + args[0]);
         }
