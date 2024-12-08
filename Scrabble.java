@@ -109,21 +109,26 @@ public class Scrabble {
 			if (input.equals(".")){
 				break;
 			}
-			else if (!MyString.includeAllLetters(hand, input)){
-				System.out.println("Invalid word. Try again.");
-			}
-			else if (!isWordInDictionary(input)){
-				System.out.println("No such word in the dictionary. Try again.");
-			}
 			else {
-				int tempScore;
-				tempScore = wordScore(input);
-				score += tempScore;
-				System.out.println(input + " earned " + tempScore + " points. Score: " + score + " points");
-				hand = MyString.remove(hand, input);
-				System.out.println("");
+				if (input.length() == 0 || input.equals("") || input.length() > hand.length() || !MyString.includeAllLetters(hand, input)){
+				System.out.println("Invalid word. Try again.");
+				}
+				else {
+					if (!isWordInDictionary(input)){
+						System.out.println("No such word in the dictionary. Try again.");
+					}
+			
+						else {
+							int tempScore;
+							tempScore = wordScore(input);
+							score += tempScore;
+							System.out.println(input + " earned " + tempScore + " points. Score: " + score + " points");
+							hand = MyString.remove(hand, input);
+							System.out.println("");
+						}
+					}
+				}
 			}
-		}
 		if (hand.length() == 0) {
 	        System.out.print("Ran out of letters. Total score: " + score + " points");
 		} else {
@@ -164,9 +169,9 @@ public class Scrabble {
 		//// Uncomment the test you want to run
 		////testBuildingTheDictionary();  
 		////testScrabbleScore();    
-		////testCreateHands();  
-		////testPlayHands();
-		//playGame();
+		testCreateHands();  
+		testPlayHands();
+		playGame();
 	}
 
 	public static void testBuildingTheDictionary() {
