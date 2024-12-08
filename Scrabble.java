@@ -98,14 +98,14 @@ public class Scrabble {
 		In in = new In();
 		while (hand.length() > 0) {
 			System.out.println("Current Hand: " + MyString.spacedString(hand));
-			System.out.println("Enter a word, or '.' to finish playing this hand:" + "\u001B[31m");
+			System.out.println("Enter a word, or '.' to finish playing this hand:");
 			// Reads the next "token" from the keyboard. A token is defined as a string of 
 			// non-whitespace characters. Whitespace is either space characters, or  
 			// end-of-line characters.
 			String input = in.readString();
 			//// Replace the following break statement with code
 			//// that completes the hand playing loop
-			System.out.print("\u001B[0m");
+			//System.out.print("\u001B[0m");
 			if (input.equals(".")){
 				break;
 			}
