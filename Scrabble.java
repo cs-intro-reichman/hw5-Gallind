@@ -93,6 +93,7 @@ public class Scrabble {
     // 1. The letters in the word are removed from the hand, which becomes smaller.
     // 2. The user gets the Scrabble points of the entered word.
     // 3. The user is prompted to enter another word, or '.' to end the hand. 
+	//cant believe it finally worked
 	public static void playHand(String hand) {
 		int n = hand.length();
 		int score = 0;
