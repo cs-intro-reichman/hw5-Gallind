@@ -125,7 +125,7 @@ public class Scrabble {
 							int tempScore;
 							tempScore = wordScore(input);
 							score += tempScore;
-							System.out.println(input + " earned " + tempScore + " points. Score: " + score + " points\n");
+							System.out.println(input + " earned " + tempScore + " points. Score: " + score + " points.\n");
 							hand = MyString.remove(hand, input);
 							//System.out.println("");
 						}
@@ -133,9 +133,9 @@ public class Scrabble {
 				}
 			}
 		if (hand.length() == 0) {
-	        System.out.print("Ran out of letters. Total score: " + score + " points");
+	        System.out.print("Ran out of letters. Total score: " + score + " points.");
 		} else {
-			System.out.print("End of hand. Total score: " + score + " points");
+			System.out.print("End of hand. Total score: " + score + " points.");
 		}
 	}
 
