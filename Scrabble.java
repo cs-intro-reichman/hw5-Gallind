@@ -115,15 +115,12 @@ public class Scrabble {
 						int tempScore = wordScore(input);
 						score += tempScore;
 						System.out.println(input + " earned " + tempScore + " points. Score: " + score + " points");
-						// Add an extra newline here to match the test's expectation
 						System.out.println();
 						hand = MyString.remove(hand, input);
 					}
 				}
 			}
 		}
-	
-		// The test expects "End of hand" even if the hand is empty
 		System.out.println("End of hand. Total score: " + score + " points");
 	}
 
