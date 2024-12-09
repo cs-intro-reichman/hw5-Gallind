@@ -126,6 +126,7 @@ public class Scrabble {
 							tempScore = wordScore(input);
 							score += tempScore;
 							System.out.println(input + " earned " + tempScore + " points. Score: " + score + " points\n");
+							System.out.flush();
 							hand = MyString.remove(hand, input);
 							//System.out.println("");
 						}
