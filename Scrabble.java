@@ -193,4 +193,3 @@ public class Scrabble {
 		//playHand("aretiin");
 	}
 }
-
