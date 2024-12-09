@@ -16,6 +16,8 @@ public class ScrabbleTest {
             case "playGameWithMockInput": testPlayGameWithMockInput(); break;
             default: System.out.println("Unknown test: " + args[0]);
         }
+        
+        //testPlayHandWithMockInput();
     }
 
     private static void testIsWordInDictionary() {
