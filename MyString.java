@@ -90,7 +90,6 @@ public class MyString {
             newStr += " " + str.charAt(i);
         }
         //newStr += str.charAt(str.length() - 1);
-        newStr += " ";
         return newStr;
     }
   
